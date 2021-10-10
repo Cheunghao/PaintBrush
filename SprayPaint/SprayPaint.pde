@@ -20,7 +20,7 @@ void draw() {
 }
 
 void mouseDragged() {
-  for (int i=0; i<8; i++) {
+  for (int i=0; i<12; i++) {
     generateOffset();
     drawCircle();
   }
@@ -28,7 +28,7 @@ void mouseDragged() {
 }
 
 void generateOffset() {
-  radius = random(5);
+  radius = random(10);
   xOffset = random(40)-20;
   yOffset = random(40)-20;
 }
@@ -65,5 +65,5 @@ void changeColor() {
     blue--;
   }
   
-  fill(red, 100, blue);
+  fill(red, 100, blue, 220);
 }
